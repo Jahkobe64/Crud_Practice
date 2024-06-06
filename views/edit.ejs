@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Character</title>
+</head>
+<body>
+    <h1>Edit Character</h1>
+    <form action="/starwars/<%=character.id%>?_method=PATCH" method="POST">
+        <label id="name"> Name </label>
+        <input type="text" name="name" placeholder="<%= character.name%>" id="name">
+        <label id="Lightsaber">Lightsaber</label>
+        <input type="boolean" id="Lightsaber" placeholder="<%= character.Lightsaber%>" name="Lightsaber">
+        <label id="Lightsabercolor">Lightsaber color</label>
+        <input type="boolean" id="Lightsabercolor" placeholder="<%= character.Lightsabercolor%>" name="Lightsabercolor">
+        <button>submit</button>
+    </form>
+    <a href="/starwars">Back to characters page</a>
+    
+</body>
+</html>

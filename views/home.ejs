@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Characters</title>
+</head>
+<body>
+    <h1>All Characters</h1>
+    <% for(let c of characters){ %>
+        <section>
+            <ul> 
+                <li><%=c.name%> </li>
+                <li>Do they have a lightsaber? <%=c.Lightsaber%> </li>
+                <li>What color is their lightsaber? <%=c.Lightsabercolor%> </li>
+            </ul>
+            <a href="/starwars/<%=c.id%>">details</a>
+        </section>
+    <% } %>
+    <br>
+    <div>
+        <a href="/starwars/new">Make a new character</a>
+    </div>
+</body>
+</html>

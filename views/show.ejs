@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Page</title>
+</head>
+<body>
+    <h1><%= foundCharacter.name %></h1>
+    <h1>Do they have a lightsaber? <%= foundCharacter.Lightsaber %></h1>
+    <h1>What color is their lightsaber? <%=foundCharacter.Lightsabercolor %></h1>
+    <div>
+        <a href="/starwars">Go back to characters</a>
+    </div>
+    <br>
+    <div>
+        <a href="/starwars/<%=foundCharacter.id%>/edit">Edit character</a>
+    </div>
+    <br>
+    <div>
+        <form action="/starwars/<%=foundCharacter.id%>?_method=DELETE" method="POST" >
+            <button>Delete</button>
+        </form>
+    </div>
+</body>
+</html>
