@@ -1,4 +1,1 @@
-# Crud_Practice
-# Crud_Practice
-# Crud_Practice
-# Crud_Practice
+# Just practicing basic CRUD functionality using some star wars characters
